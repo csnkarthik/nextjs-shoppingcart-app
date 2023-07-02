@@ -14,7 +14,7 @@ const CartPage = () => {
   <div className="p-2">
   
       {cartItems.map((item) => (
-        <CartItemCard cartItem={item} />
+        <CartItemCard cartItem={item} key={item.product.id} />
       ))}
 
       <p className="text-slate-600 text-right">

@@ -9,7 +9,7 @@ export default function Home() {
         {dummyProducts.map(product =>{
           return(
             <div>
-              <ProductCard product={product}></ProductCard>
+              <ProductCard product={product} key={product.id}></ProductCard>
             </div>
           )
         })}
