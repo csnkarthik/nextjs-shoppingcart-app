@@ -5,15 +5,11 @@ export default function Home() {
   return (
     <main>
       <h1 className='h-1 p-5 text-center'>Your one stop store</h1>
-      <div className='p-4 flex flex-wrap gap-4'>
-        {dummyProducts.map(product =>{
-          return(
-            <div>
-              <ProductCard product={product} key={product.id}></ProductCard>
-            </div>
-          )
-        })}
-      </div>
+      <div className="p-4 flex flex-wrap gap-4">
+      {dummyProducts.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
     </main>
   )
 }
